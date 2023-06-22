@@ -6,7 +6,7 @@ wikipedia
 ssl
 os
 pywhatkit
-webbrouwser
+webbrowser
 email.message
 I want to make this without these so i am currently studying Machine Learning Algorithms, Neural Networking, Natural learning process  and other topics for this
 There are 5 versions of this you can try out any of them.
