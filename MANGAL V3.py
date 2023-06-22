@@ -70,14 +70,14 @@ if __name__ == '__main__':
          elif 'send a mail' in query:
                 speak("Whom do you want to send the mail")
                 mailr = takeCommand().lower()
-                if 'didi' in mailr:
-                    email_receiver = "smimansha2408@gmail.com"
-                elif 'myself' in mailr:
-                    email_receiver = "abhyudh@gmail.com"
-                elif 'papa' in mailr:
-                    email_receiver = "vikas@doomshell.com"
-                elif 'mama' in mailr:
-                    email_receiver = "priyanka@doomshell.com"
+                 if 'importantdude' in mailr:
+                     email_receiver = "someone@example.com"
+                 elif 'myself' in mailr:
+                     email_receiver = "youremail@website.com"
+                 elif 'importantguy' in mailr:
+                     email_receiver = "someone@example.com"
+                 elif 'importantperson' in mailr:
+                     email_receiver = "someone@example.com"
                 else:
                     speak("I don't have the mail details for that.......kindly provide me the mail address")
                     print("Mail: ", end="")
