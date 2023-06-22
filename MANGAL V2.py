@@ -11,8 +11,8 @@ from email.message import EmailMessage
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
-email_sender = 'abhyudhsolanki@gmail.com'
-email_password = 'samjehzqashoikar'
+email_sender = 'youremail@website.com'
+email_password = 'youremailkey'
 
 def speak(text):
     engine.say(text)
@@ -45,7 +45,7 @@ if __name__ == '__main__':
         speak("Please provide your identity.")
         identity = input("Identity: ").lower()
 
-        if identity == 'abhyudh':
+        if identity == 'yourname':
             authenticated = True
             speak("Access granted. Welcome Maa lick!")
             speak("What shall we do today?")
@@ -70,14 +70,13 @@ if __name__ == '__main__':
          elif 'send a mail' in query:
                 speak("Whom do you want to send the mail")
                 mailr = takeCommand().lower()
-                if 'didi' in mailr:
-                    email_receiver = "smimansha2408@gmail.com"
-                elif 'myself' in mailr:
-                    email_receiver = "abhyudh@gmail.com"
-                elif 'papa' in mailr:
-                    email_receiver = "vikas@doomshell.com"
-                elif 'mama' in mailr:
-                    email_receiver = "priyanka@doomshell.com"
+                 if 'importantdude' in mailr:
+                     email_receiver = "someone@example.com"
+                 elif 'myself' in mailr:
+                     email_receiver = "youremail@website.com"
+                 elif 'importantguy' in mailr:
+                         email_receiver = "someone@example.com"
+                 elif 'importantperson' in mailr:
                 else:
                     speak("I don't have the mail details for that.......kindly provide me the mail address")
                     print("Mail: ", end="")
