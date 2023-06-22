@@ -9,7 +9,7 @@ from email.message import EmailMessage
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0])
-email_sender = 'abhyudhsolanki@gmail.com'
+email_sender = 'youremail@website.com'
 email_password = 'youremailkey'
 
 def speak(text):
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         speak("Please provide your identity.")
         identity = input("Identity: ").lower()
 
-        if identity == 'abhyudh':
+        if identity == 'your name':
             authenticated = True
             speak("Access granted. Welcome Boss!")
             speak("What shall we do today?")
@@ -66,16 +66,15 @@ if __name__ == '__main__':
          elif 'i love you' in query:
              speak("Ohh....no one has ever said that to me... that is so nice of you maa lick")
          elif 'send a mail' in query:
-                speak("Whom do you want to send the mail")
-                mailr = takeCommand().lower()
-                if 'didi' in mailr:
-                    email_receiver = "smimansha2408@gmail.com"
-                elif 'myself' in mailr:
-                    email_receiver = "abhyudhsolanki@gmail.com"
-                elif 'papa' in mailr:
-                    email_receiver = "vikas@doomshell.com"
-                elif 'mama' in mailr:
-                    email_receiver = "priyanka@doomshell.com"
+                speak("Whom do you want to send the mail")mailr = takeCommand().lower()
+                 if 'importantdude' in mailr:
+                     email_receiver = "someone@example.com"
+                 elif 'myself' in mailr:
+                     email_receiver = "youremail@website.com"
+                 elif 'importantguy' in mailr:
+                     email_receiver = "someone@example.com"
+                 elif 'importantperson' in mailr:
+                     email_receiver = "someone@example.com"
                 else:
                     speak("I don't have the mail details for that.......kindly provide me the mail address")
                     print("Mail: ", end="")
