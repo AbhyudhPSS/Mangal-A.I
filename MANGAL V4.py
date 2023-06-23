@@ -8,8 +8,8 @@ import ssl
 import pywhatkit
 import smtplib
 from email.message import EmailMessage
-email_sender = 'abhyudhsolanki@gmail.com'
-email_password = 'samjehzqashoikar'
+email_sender = 'youremail@website.com'
+email_password = 'youremailkey'
 
 r = sr.Recognizer()
 engine = pyttsx3.init()
