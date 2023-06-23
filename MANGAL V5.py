@@ -60,9 +60,29 @@ if __name__ == '__main__':
         speak("Please provide your identity.")
         identity = input("Identity: ").lower()
 
-        if identity == 'abhyudh' or identity == 'your name':
+        if identity == '1403':
             authenticated = True
             speak("Access granted. Welcome Maa lick!")
+            speak("Please Write Your Name below")
+            name = str(input("Name: ")).lower()
+            speak("Please Write your email below")
+            myselfemail = str(input("Email: ")).lower()
+            speak("Please Write Your important contact's name below")
+            importantcontact1 = str(input("Contact's Name: ")).lower()
+            speak("Please Write their email below")
+            importantcontact1email = str(input("Email: ")).lower()
+            speak("Please Write another important contact's name below")
+            importantcontact2 = str(input("Contact's Name: ")).lower()
+            speak("Please Write their email below")
+            importantcontact2email = str(input("Email: ")).lower()
+            speak("Please Write another important contact's name below")
+            importantcontact3 = str(input("Contact's Name: ")).lower()
+            speak("Please Write their email below")
+            importantcontact3email = str(input("Email: ")).lower()
+            speak("Identifying all data")
+            time.sleep(1)
+            speak("storing all data in temporary memory")
+            time.sleep(1)
             speak("What shall we do today?")
         else:
             speak("Access denied.")
@@ -89,14 +109,17 @@ if __name__ == '__main__':
          elif 'send a mail' in query or 'mail bhejo' in query:
              speak("Whom do you want to send the mail")
              mailr = takeCommand().lower()
-             if 'importantdude' in mailr:
-                 email_receiver = "someone@example.com"
+             elif 'send a mail' in query or 'mail bhejo' in query or 'send email' in query:
+             speak("Whom do you want to send the mail")
+             mailr = takeCommand().lower()
+             if importantcontact1 in mailr:
+                 email_receiver = importantcontact1email
              elif 'myself' in mailr:
-                 email_receiver = "youremail@website.com"
-             elif 'importantguy' in mailr:
-                 email_receiver = "someone@example.com"
-             elif 'importantperson' in mailr:
-                 email_receiver = "someone@example.com"
+                 email_receiver = myselfemail
+             elif importantcontact2 in mailr:
+                 email_receiver = importantcontact2email
+             elif importantcontact3 in mailr:
+                 email_receiver = importantcontact3email
              else:
                  speak("I don't have the mail details for that.......kindly provide me the mail address")
                  print("Mail: ", end="")
