@@ -11,8 +11,8 @@ from email.message import EmailMessage
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
-email_sender = 'abhyudhsolanki@gmail.com'
-email_password = 'samjehzqashoikar'
+email_sender = 'youremail@website.com'
+email_password = 'youremailkey'
 
 def speak(text):
     engine.say(text)
@@ -45,7 +45,7 @@ if __name__ == '__main__':
         speak("Please provide your identity.")
         identity = input("Identity: ").lower()
 
-        if identity == 'abhyudh' or identity == 'avi':
+        if identity == 'abhyudh' or identity == 'yourname':
             authenticated = True
             speak("Access granted. Welcome Maa lick!")
             speak("What shall we do today?")
